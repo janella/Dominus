@@ -2,7 +2,7 @@ using System;
 
 namespace Dominus.Libs
 {
-    public class Class1
+    public class Card
     {
     }
 }
