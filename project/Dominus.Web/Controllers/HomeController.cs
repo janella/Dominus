@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Dominus.Models;
+using Dominus.Web.Models;
 
 namespace Dominus.Controllers
 {
@@ -13,6 +14,16 @@ namespace Dominus.Controllers
         public IActionResult Index()
         {
             return View();
+        }
+
+        public IActionResult Decks()
+        {
+          var model = new DeckModel()
+          {
+            Name = "Base"
+          };
+
+          return View("Decks", model);
         }
 
         public IActionResult Error()
