@@ -1,9 +1,15 @@
-@model Dominus.Web.Models.DeckModel
+@model List<Dominus.Web.Models.DeckModel>
 
 @{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Decks";
 }
 
 <div class="row">
-  <p>Decks are here! The name of the deck is: @Model.Name </p>
+  <p>Decks are here! The decks available are: </p>
+    <ul>
+     @foreach(var deck in @Model)
+    {
+      <li>@deck.Name</li>
+    }
+    </ul>
 </div>

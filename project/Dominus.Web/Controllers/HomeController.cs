@@ -17,11 +17,11 @@ namespace Dominus.Web.Controllers
 
         public IActionResult Decks()
         {
-          var model = new DeckModel()
+          var model = new List<DeckModel>()
           {
-            Name = "Base"
+            new DeckModel { Name = "Base" },
+            new DeckModel { Name = "Intrigue" }
           };
-
           return View("Decks", model);
         }
 
