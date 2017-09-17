@@ -1,13 +1,12 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Dominus.Models;
 using Dominus.Web.Models;
 
-namespace Dominus.Controllers
+namespace Dominus.Web.Controllers
 {
     public class HomeController : Controller
     {

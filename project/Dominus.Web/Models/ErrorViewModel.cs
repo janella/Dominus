@@ -1,6 +1,6 @@
 using System;
 
-namespace Dominus.Models
+namespace Dominus.Web.Models
 {
     public class ErrorViewModel
     {
