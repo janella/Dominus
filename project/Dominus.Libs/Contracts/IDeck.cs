@@ -2,9 +2,9 @@ using System;
 
 namespace Dominus.Libs.Contracts
 {
-  public interface IDeck
-  {
-    Card Draw();
-    void Shuffle();
-  }
+    public interface IDeck
+    {
+        ICard Draw();
+        void Shuffle();
+    }
 }
