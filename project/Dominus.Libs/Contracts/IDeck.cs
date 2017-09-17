@@ -6,5 +6,6 @@ namespace Dominus.Libs.Contracts
     {
         ICard Draw();
         void Shuffle();
+        int Count { get; }
     }
 }

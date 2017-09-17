@@ -7,6 +7,10 @@ namespace Dominus.Libs
     public class PlayerDeck : IDeck
     {
         private Stack<ICard> Contents;
+        public int Count
+        {
+            get { return Contents.Count; }
+        }
 
         public PlayerDeck()
         {
