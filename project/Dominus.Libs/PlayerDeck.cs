@@ -11,6 +11,8 @@ namespace Dominus.Libs
         public PlayerDeck()
         {
             Contents = new Stack<ICard>();
+            Contents.Push(new Card("Copper", "Treasure", 0)); // x7
+            Contents.Push(new Card("Estate", "Victory", 2)); // x3
         }
 
         public ICard Draw()
